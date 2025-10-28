@@ -128,21 +128,16 @@ A **hybrid layout** mixes fixed and flexible elements — for example, a static 
 The **`calc()`** CSS function allows you to perform real-time mathematical operations directly in your stylesheets.  
 It is particularly useful when you need to mix **different units** (e.g., `px`, `%`, `em`, `vh`) or build **adaptive layouts**.
 
----
-
 **Syntax**
 ```css
 property: calc(expression);
 ```
-
----
 
 **Rules**
 - Always put **spaces** around operators (`+`, `-`, `*`, `/`).  
 - You can safely mix **absolute** and **relative** units.  
 - The browser automatically performs the calculation, ensuring precision and responsiveness.
 
----
 
 **Examples**
 ```css
@@ -155,19 +150,14 @@ nav ul li {
 main {
   width: calc(100% - 300px);
 }
-```
-
----
 
 **Common Use Cases**
 
-| Scenario | Example |
-|-----------|----------|
-| Mixing fixed and fluid units | `width: calc(70% - 20px)` |
-| Even spacing between boxes | `margin-left: calc(2em + 1%)` |
+| Scenario                              | Example                       |
+|---------------------------------------|-------------------------------|
+| Mixing fixed and fluid units          | `width: calc(70% - 20px)`     |
+| Even spacing between boxes            | `margin-left: calc(2em + 1%)` |
 | Adjusting height relative to viewport | `height: calc(100vh - 100px)` |
-
----
 
 
 ## 6. Navigation Bar Example ###
