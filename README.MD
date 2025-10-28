@@ -150,6 +150,7 @@ nav ul li {
 main {
   width: calc(100% - 300px);
 }
+```
 
 **Common Use Cases**
 
