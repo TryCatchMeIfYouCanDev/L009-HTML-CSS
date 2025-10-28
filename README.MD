@@ -46,11 +46,11 @@ header {
 Browsers apply default styles that differ across platforms. A **CSS Reset** removes these inconsistencies, providing a consistent baseline for all browsers.
 
 ### 3.2 Common Resets ###
-| Author | Year | Description | Link |
-|---------|------|-------------|------|
-| **Eric A. Meyer** | 2011 | Classic reset that removes default margins, padding, borders, and font sizes. | [Meyer Reset](http://meyerweb.com/eric/tools/css/reset/) |
-| **Yahoo YUI Reset** | 2014 | Lightweight, BSD-licensed reset used in YUI library. | [YUI CSS Reset](https://clarle.github.io/yui3/yui/docs/cssreset/) |
-| **Josh Comeau** | 2022 | Modern reset that combines reset and normalization principles. | [Comeau Reset](https://www.joshwcomeau.com/css/custom-css-reset/) |
+| Author                | Year | Description                                                                    | Link                                                              |
+|-----------------------|------|--------------------------------------------------------------------------------|-------------------------------------------------------------------|
+| **Eric A. Meyer**     | 2011 | Classic reset that removes default margins, padding, borders, and font sizes.  | [Meyer Reset](http://meyerweb.com/eric/tools/css/reset/)          |
+| **Yahoo YUI Reset**   | 2014 | Lightweight, BSD-licensed reset used in YUI library.                           | [YUI CSS Reset](https://clarle.github.io/yui3/yui/docs/cssreset/) |
+| **Josh Comeau**       | 2022 | Modern reset that combines reset and normalization principles.                 | [Comeau Reset](https://www.joshwcomeau.com/css/custom-css-reset/) |
 
 ### 3.3 Implementation Example ###
 ```css
@@ -80,20 +80,20 @@ figure img {
 ### 5.1 Fixed (Rigid) Layout ###
 A **fixed layout** uses absolute measurements (e.g., `px`) that do not adapt to different viewport sizes.
 
-| Characteristic | Description |
-|----------------|--------------|
-| **Width** | Set in pixels (e.g., 1200px) |
-| **Adaptability** | None — may cause scrollbars |
-| **Wrapper** | A centred container with fixed width |
+| Characteristic    | Description                           |
+|-------------------|---------------------------------------|
+| **Width**         | Set in pixels (e.g., 1200px)          |
+| **Adaptability**  | None — may cause scrollbars           |
+| **Wrapper**       | A centred container with fixed width  |
 
 ### 5.2 Fluid (Liquid) Layout ###
 A **fluid layout** uses relative measurements (percentages) to adapt to the viewport width.
 
-| Property | Description |
-|-----------|--------------|
-| `max-width` | Limits the maximum container width |
-| `%` | Used to define proportional element widths |
-| Example Formula | `(child width / parent width) × 100` |
+| Property          | Description                                   |
+|-------------------|-----------------------------------------------|
+| `max-width`       | Limits the maximum container width            |
+| `%`               | Used to define proportional element widths    |
+| Example Formula   | `(child width / parent width) × 100`          |
 
 **Example:**
 ```css
@@ -105,17 +105,17 @@ nav ul li {
 ### 5.3 Elastic Layout ###
 In an **elastic layout**, not only containers but also **media elements** adapt to their parent’s size using `max-width: 100%`.
 
-| Feature | Description |
-|----------|--------------|
-| **Scalable media** | Images and videos resize dynamically |
-| **Avoid distortion** | Use `max-width`, not `width` |
+| Feature               | Description                           |
+|-----------------------|---------------------------------------|
+| **Scalable media**    | Images and videos resize dynamically  |
+| **Avoid distortion**  | Use `max-width`, not `width`          |
 
 ### 5.4 Hybrid Layout ###
 A **hybrid layout** mixes fixed and flexible elements — for example, a static banner alongside fluid content.
 
-| Use Case | Technique |
-|-----------|------------|
-| Mixed fixed & fluid boxes | Use `calc()` to distribute remaining space |
+| Use Case                  | Technique                                     |
+|---------------------------|-----------------------------------------------|
+| Mixed fixed & fluid boxes | Use `calc()` to distribute remaining space    |
 
 ```css
 .main-content {
@@ -194,14 +194,14 @@ body > div article:last-of-type {
 
 ## 8. Best Practices Summary ##
 
-| Concept | Recommendation |
-|----------|----------------|
-| **Float** | Avoid for layout — use Flexbox or Grid |
-| **Images** | Always `max-width: 100%; display: block;` |
-| **Padding vs Height** | Use padding for spacing, not height |
-| **CSS Reset** | Always include before any other rule |
-| **Responsive Units** | Prefer `%`, `em`, `rem`, and `fr` |
-| **Layout Choice** | Match layout type to project needs |
+| Concept                   | Recommendation                            |
+|---------------------------|-------------------------------------------|
+| **Float**                 | Avoid for layout — use Flexbox or Grid    |
+| **Images**                | Always `max-width: 100%; display: block;` |
+| **Padding vs Height**     | Use padding for spacing, not height       |
+| **CSS Reset**             | Always include before any other rule      |
+| **Responsive Units**      | Prefer `%`, `em`, `rem`, and `fr`         |
+| **Layout Choice**         | Match layout type to project needs        |
 
 ---
 
