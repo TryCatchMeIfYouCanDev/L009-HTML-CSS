@@ -1,0 +1,53 @@
+/* TYPE SELECTOR */
+
+h3 {
+    color: rgb(255, 0, 255);
+}
+
+/* MULTIPLE TYPE SELECTOR */
+
+h2, div, p {
+    color: #f00;
+}
+
+/* DISCENDENT SELECTOR */
+
+aside h3 {
+    background-color: grey;
+    border: 1px double black;
+}
+
+/* CLASS SELECTOR */
+
+a.warning, article p.warning {
+    background-color: #ffff00;
+    color: #f00;
+    font-size: 1.5rem;
+}
+
+/* ID SELECTOR */
+aside#sidebar {
+    font-family: 'Courier New', Courier, monospace;
+    /*SHORTHAND*/
+    border: 2px pink dashed;
+}
+
+/* CLASS SELECTOR -> Utilities */
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.color1 {
+    background-color: black;
+    color: white;
+}
+
+.color2 {
+    background-color: orange;
+    color: white;
+}
